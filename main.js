@@ -4,7 +4,7 @@ const nodemailer = require("nodemailer");
 const path = require("path");
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 require("dotenv").config();
 app.set("view engine", "ejs")
@@ -13,6 +13,8 @@ app.set("view engine", "ejs")
 app.use(express.static('assets'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static("public")); // Serve your HTML, CSS, JS
+const cors = require('cors');
+app.use(cors());
 
 // Route to handle form submission
 app.get("/download-file",(req,res)=>{
