@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <nav class="nav">
+        <h1> <a href="#home">Zohul <span>Studio</span> </a></h1>
+        <ul>
+            <li><a href="#home"> Home</a> </li>
+            <li > <a href="#about"> About</a> </li>
+            <li><a href="#service" > Service</a> </li>
+            <li><a href="#project"> Project</a> </li>
+            <li><a href="#contact"> Contact</a> </li>
+        </ul>
+        <img class="hamburger invert" src="/images/hamburger.png"   alt="menu" style="background: rgb(255, 255, 255);">
+    </nav>
+    <div id="home" class="home">
+        <div class="detail">
+            <h2>Hello it's Me </h2>
+            <h1>Faizan Ahmad</h1>
+            <h3> and i'm a <span class="full">Full Stack Developer</span></h3>
+            <p>I build fast, responsive, and user-friendly web applications from front to back. I enjoy turning ideas into real, working product.</p>
+           <form action="/download-file"><button>Download Cv</button></form>
+        </div>
+        <div class="profile-pic"><img height="400px" src="images/WhatsApp Image 2025-04-09 at 12.19.39_b94e2935.jpg"
+                alt=""></div>
+    </div>
+    <div id="about" class="about">
+        <div class="profile-pic2"><img height="400px" src="images/WhatsApp Image 2025-04-09 at 12.19.39_b94e2935.jpg"
+                alt=""></div>
+        <div class="aboutme">
+            <h1>About <span class="me">Me</span></h1>
+            <h2>Full Stack Developer !</h2>
+            <p>I'm Faizan Ahmad, a dedicated Full Stack Developer with a strong passion for building modern, responsive, and user-friendly web applications. With hands-on experience in technologies like HTML, CSS, JavaScript, Node.js, Express, and MongoDB, I enjoy working on both the frontend and backend to create seamless digital experiences. </p>
+            <p class="p1">I love solving real-world problems through clean and efficient code, and I continuously explore new tools, frameworks, and best practices to stay up to date with the latest trends in web development. Whether it's designing intuitive UIs or optimizing backend logic for performance, I focus on writing scalable code that delivers value.
+
+My goal is to contribute to impactful projects, collaborate with like-minded professionals, and grow as a developer by constantly challenging myself. I'm always open to exciting opportunities where I can use my skills to make a difference.</p>
+            <button class="btn">Read More</button>
+        </div>
+    </div>
+    <div id="service" class="service">
+        <h1>Our <span>Services</span></h1>
+        <div class="service-box">
+           
+        </div>
+    </div>
+    <div id="project" class="projects">
+        <h1>Latest <span>Projects</span></h1>
+           <div class="pro">
+
+           </div>
+    </div>
+    <div id="contact" class="contact">
+        <h1>Contact <span>Me</span></h1>
+        <form method="POST" action="/send">
+            <div class="textbox">
+                <input type="text" name="firstname" placeholder="First Name" required>
+                <input type="text" name="lastname" placeholder="Second Name" required>
+            </div>
+            <div class="textbox">
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="text" name="subject" placeholder="Subject">
+            </div>
+            <div class="message">
+                <Textarea name="message" placeholder="Your Message"></Textarea>
+            </div>
+            <button> Send Message</button>
+        </form>
+    </div>
+    <footer class="footer">
+  <p>&copy; <span id="year"></span> Faizan Ahmad. All rights reserved.</p>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
