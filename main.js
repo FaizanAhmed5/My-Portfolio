@@ -23,11 +23,8 @@ app.get("/download-file",(req,res)=>{
 app.get('/',(req,res)=>{
   res.render("index")
 })
-app.post("/", (req, res) => {
+app.post("/send", (req, res) => {
   const { firstname, lastname, email, subject, message } = req.body;
-
-
-
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
@@ -48,7 +45,7 @@ app.post("/", (req, res) => {
       res.send("Error occurred, message not sent.");
     } else {
       console.log("Email sent: " + info.response);
-      res.send("Message sent successfully!");
+      res.redirect("/");
     }
   });
 });
